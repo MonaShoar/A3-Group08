@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin: 40px 0;
+  color: #304b31;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+input[type="text"] {
+  padding: 18px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #2328be;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+ul {
+  margin: 80px auto;
+  max-width: 60%;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li.delete {
+  animation:0.5s forwards;
+}
+
+li button {
+  margin-left: auto;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px 14px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #4CAF50;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #4CAF50;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "\2713";
+  font-size: 14px;
+  color: #fff;
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
